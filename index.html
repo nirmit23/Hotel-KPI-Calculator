@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel KPI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hotel KPI Calculator</h1>
+
+    <h2>Enter Hotel Data</h2>
+
+    <label>
+        Total Rooms Available:
+        <input type="number" id="totalRooms" value="0" min="0">
+    </label>
+
+    <label>
+        Rooms Sold:
+        <input type="number" id="roomsSold" value="0" min="0">
+    </label>
+
+    <label>
+        Total Room Revenue ($):
+        <input type="number" id="totalRevenue" value="0" min="0" step="0.01">
+    </label>
+
+    <div class="results">
+        <h2>Key Performance Indicators</h2>
+        
+        <div class="kpi">
+            <strong>Occupancy:</strong>
+            <span id="occupancy">0.00%</span>
+        </div>
+
+        <div class="kpi">
+            <strong>ADR:</strong>
+            <span id="adr">$0.00</span>
+        </div>
+
+        <div class="kpi">
+            <strong>RevPAR:</strong>
+            <span id="revpar">$0.00</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
